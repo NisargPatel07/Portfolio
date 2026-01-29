@@ -44,10 +44,10 @@
         <div class="chips">
           <span class="chip">Linux</span>
           <span class="chip">Python</span>
+          <span class="chip">Java</span>
           <span class="chip">Flask</span>
           <span class="chip">Automation</span>
           <span class="chip">Log Analysis</span>
-          <span class="chip">ML Pipelines</span>
         </div>
       </div>
 
@@ -77,48 +77,68 @@
     <!-- PROJECTS -->
     <section class="section" id="projects">
       <div class="section-head">
-        <h2>Featured Projects</h2>
-        <p>Three systems that show real IT, security, and data workflows.</p>
-      </div>
-
-      <div class="filters">
-        <button class="pill active" data-filter="all" type="button">All</button>
-        <button class="pill" data-filter="cyber" type="button">Cybersecurity</button>
-        <button class="pill" data-filter="data" type="button">Data Science</button>
-        <button class="pill" data-filter="it" type="button">IT Automation</button>
+        <h2>Projects</h2>
+        <p>Hands-on systems across IT automation, cybersecurity detection, and infrastructure analytics.</p>
       </div>
 
       <div class="grid" id="projectGrid">
-        <article class="card" data-tags="cyber">
+        <!-- SOCLite -->
+        <article class="card">
           <div class="badge">Cybersecurity</div>
           <div class="card-title">SOCLite</div>
           <div class="card-sub">SOC Detection & Response Platform</div>
           <ul class="card-list">
-            <li>Detects brute force, password spray, impossible travel</li>
-            <li>Generates prioritized alerts with severity scoring</li>
-            <li>Dashboard workflow for triage and closure</li>
+            <li>Built a detection pipeline to analyze authentication logs and identify brute-force, password spraying, and impossible travel events</li>
+            <li>Developed rule-based detections and severity scoring to generate prioritized security alerts</li>
+            <li>Created a SOC dashboard using Flask to support alert triage and incident tracking</li>
           </ul>
         </article>
 
-        <article class="card" data-tags="data">
+        <!-- Incident Forecaster -->
+        <article class="card">
           <div class="badge">Data Science</div>
           <div class="card-title">Incident Forecaster</div>
           <div class="card-sub">Cloud Incident Prediction Platform</div>
           <ul class="card-list">
-            <li>Predicts failure risk using system metrics and logs</li>
-            <li>Feature engineering + gradient boosting models</li>
-            <li>Host-level risk scoring and monitoring view</li>
+            <li>Built a machine learning pipeline to predict infrastructure failures using CPU, memory, disk, network, and log-derived metrics</li>
+            <li>Performed feature engineering and trained gradient boosting models evaluated with ROC-AUC, precision, recall, and F1</li>
+            <li>Created a Flask dashboard to visualize incident risk and operational health across multiple hosts</li>
           </ul>
         </article>
 
-        <article class="card" data-tags="it">
+        <!-- System Health Monitor -->
+        <article class="card">
           <div class="badge">IT Automation</div>
           <div class="card-title">System Health Monitor</div>
           <div class="card-sub">Monitoring + Ticketing Lab</div>
           <ul class="card-list">
-            <li>Monitors CPU + disk health with thresholds</li>
-            <li>Auto-creates tickets and stores incident history</li>
-            <li>Operational dashboard for reliability tracking</li>
+            <li>Built a Python-based monitoring platform that tracks disk usage and CPU load across endpoints and servers</li>
+            <li>Implemented alert thresholds, automatic ticket creation, and incident tracking using a web dashboard and SQLite</li>
+            <li>Designed a background monitoring service with configurable policies for proactive issue detection</li>
+          </ul>
+        </article>
+
+        <!-- Smart Car Enhancement -->
+        <article class="card">
+          <div class="badge">Embedded / IT</div>
+          <div class="card-title">Smart Car Enhancement</div>
+          <div class="card-sub">Freenove Smart Car Kit FNK0043 | IT Expert System</div>
+          <ul class="card-list">
+            <li>Worked with a team of 5 to enhance the Freenove Smart Car Kit FNK0043 with new capabilities</li>
+            <li>Incorporated GPS integration for navigation and microphone integration for voice commands</li>
+            <li>Collaborated to design, prototype, and test added functionalities; optimized software using Python</li>
+          </ul>
+        </article>
+
+        <!-- Connect Four -->
+        <article class="card">
+          <div class="badge">Networking / Java</div>
+          <div class="card-title">Connect Four Client–Server Game</div>
+          <div class="card-sub">Multiplayer Socket-Based Game</div>
+          <ul class="card-list">
+            <li>Designed and implemented a multiplayer Connect Four game in Java using client–server socket communication for real-time play</li>
+            <li>Developed multithreaded server logic to manage clients, enforce turns, and perform win detection (horizontal, vertical, diagonal)</li>
+            <li>Built a Java Swing client UI and server GUI to visualize gameplay and connection status for better usability</li>
           </ul>
         </article>
       </div>
@@ -138,7 +158,7 @@
             <div class="tl-title">IT Expert System — Programming Intern</div>
             <div class="tl-meta">Schaumburg, IL • Jul 2023 – Aug 2023</div>
             <ul class="tl-list">
-              <li>Diagnosed and resolved production hardware/software issues to support uptime.</li>
+              <li>Diagnosed and resolved production hardware/software issues to support uptime and reliability.</li>
               <li>Supported embedded Linux devices used in testing environments.</li>
               <li>Debugged system-level failures involving networking and sensors.</li>
             </ul>
@@ -173,8 +193,7 @@
           <div class="contact-value">
             <a class="link" href="mailto:nisargpatelnp.112003@gmail.com">nisargpatelnp.112003@gmail.com</a>
           </div>
-          <button class="btn small" id="copyEmailBtn" type="button"
-                  data-email="nisargpatelnp.112003@gmail.com">Copy</button>
+          <button class="btn small" id="copyEmailBtn" type="button" data-email="nisargpatelnp.112003@gmail.com">Copy</button>
         </div>
 
         <div class="contact-card">
