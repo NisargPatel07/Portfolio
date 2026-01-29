@@ -22,7 +22,6 @@
   </header>
 
   <main class="wrap">
-
     <!-- HERO -->
     <section class="hero">
       <div class="hero-left">
@@ -38,22 +37,21 @@
             detecting threats, and predicting failures.
           </p>
           
-
         <div class="hero-cta">
           <a class="btn" href="#projects">View Projects</a>
           <a class="btn ghost"
              href="https://drive.google.com/file/d/1n4Jp6K33p_qrFjnvlUPMXTKnHRtMFSNC/view?usp=sharing"
-             target="_blank">Resume</a>
+             target="_blank" rel="noopener noreferrer">Resume</a>
           <a class="btn ghost" href="#contact">Contact</a>
         </div>
 
         <div class="chips">
+          <span class="chip">Linux</span>
           <span class="chip">Python</span>
           <span class="chip">Java</span>
-          <span class="chip">Linux</span>
           <span class="chip">Flask</span>
           <span class="chip">Automation</span>
-          <span class="chip">ML</span>
+          <span class="chip">Log Analysis</span>
         </div>
       </div>
 
@@ -70,10 +68,11 @@
           <div class="panel-actions">
             <a class="btn small"
                href="https://github.com/NisargPatel07"
-               target="_blank">GitHub</a>
+               target="_blank" rel="noopener noreferrer">GitHub</a>
+
             <a class="btn small ghost"
                href="https://www.linkedin.com/in/nisargpatel07131511/"
-               target="_blank">LinkedIn</a>
+               target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>
@@ -83,47 +82,105 @@
     <section class="section" id="projects">
       <div class="section-head">
         <h2>Projects</h2>
-        <p>Hands-on systems across security, data, and IT automation.</p>
+        <p>Hands-on systems across IT automation, cybersecurity detection, and infrastructure analytics.</p>
       </div>
 
-      <div class="grid">
-
+      <div class="grid" id="projectGrid">
         <!-- SOCLite -->
         <article class="card">
-          <div class="badge">Cybersecurity</div>
-          <div class="card-title">SOCLite</div>
-          <div class="card-sub">SOC Detection & Response Platform</div>
-          <ul class="card-list">
-            <li>Built a log analysis system to detect brute-force, password spray, and travel-based attacks</li>
-            <li>Created rules and severity scores to rank security alerts</li>
-            <li>Built a Flask dashboard for alert review and case tracking</li>
-          </ul>
-        </article>
+            <div class="badge">Cybersecurity</div>
+            <div class="card-title">SOCLite</div>
+            <div class="card-sub">SOC Detection & Response Platform</div>
+            <ul class="card-list">
+              <li>Built a log analysis system to detect brute-force, password spray, and travel-based attacks</li>
+              <li>Created rules and severity scores to rank security alerts</li>
+              <li>Built a Flask dashboard for alert review and case tracking</li>
+            </ul>
+          </article>
+  
+          <!-- Incident Forecaster -->
+          <article class="card">
+            <div class="badge">Data Science</div>
+            <div class="card-title">Incident Forecaster</div>
+            <div class="card-sub">Cloud Incident Prediction Platform</div>
+            <ul class="card-list">
+              <li>Built a machine learning system to predict system failures from metrics and logs</li>
+              <li>Engineered features and trained gradient boosting models</li>
+              <li>Built a dashboard to show risk levels across servers</li>
+            </ul>
+          </article>
+  
+          <!-- System Health Monitor -->
+          <article class="card">
+            <div class="badge">IT Automation</div>
+            <div class="card-title">System Health Monitor</div>
+            <div class="card-sub">Monitoring + Ticketing Lab</div>
+            <ul class="card-list">
+              <li>Built a Python system to track CPU and disk health across machines</li>
+              <li>Added alerts and automatic ticket creation</li>
+              <li>Designed background services for early issue detection</li>
+            </ul>
+          </article>
 
-        <!-- Incident Forecaster -->
+        <!-- Smart Car Enhancement -->
         <article class="card">
-          <div class="badge">Data Science</div>
-          <div class="card-title">Incident Forecaster</div>
-          <div class="card-sub">Cloud Incident Prediction Platform</div>
+          <div class="badge">Embedded / IT</div>
+          <div class="card-title">Smart Car Enhancement</div>
+          <div class="card-sub">Freenove Smart Car Kit FNK0043 | IT Expert System</div>
           <ul class="card-list">
-            <li>Built a machine learning system to predict system failures from metrics and logs</li>
-            <li>Engineered features and trained gradient boosting models</li>
-            <li>Built a dashboard to show risk levels across servers</li>
+            <li>Worked with a team of 5 to enhance the Freenove Smart Car Kit FNK0043 with new capabilities</li>
+            <li>Incorporated GPS integration for navigation and microphone integration for voice commands</li>
+            <li>Collaborated to design, prototype, and test added functionalities; optimized software using Python</li>
           </ul>
         </article>
 
-        <!-- System Health Monitor -->
+        <!-- Connect Four -->
         <article class="card">
-          <div class="badge">IT Automation</div>
-          <div class="card-title">System Health Monitor</div>
-          <div class="card-sub">Monitoring + Ticketing Lab</div>
+          <div class="badge">Networking / Java</div>
+          <div class="card-title">Connect Four Client–Server Game</div>
+          <div class="card-sub">Multiplayer Socket-Based Game</div>
           <ul class="card-list">
-            <li>Built a Python system to track CPU and disk health across machines</li>
-            <li>Added alerts and automatic ticket creation</li>
-            <li>Designed background services for early issue detection</li>
+            <li>Designed and implemented a multiplayer Connect Four game in Java using client–server socket communication for real-time play</li>
+            <li>Developed multithreaded server logic to manage clients, enforce turns, and perform win detection (horizontal, vertical, diagonal)</li>
+            <li>Built a Java Swing client UI and server GUI to visualize gameplay and connection status for better usability</li>
           </ul>
         </article>
+      </div>
+    </section>
 
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p>Hands-on work in production-style environments.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-title">IT Expert System — Programming Intern</div>
+            <div class="tl-meta">Schaumburg, IL • Jul 2023 – Aug 2023</div>
+            <ul class="tl-list">
+              <li>Diagnosed and resolved production hardware/software issues to support uptime and reliability.</li>
+              <li>Supported embedded Linux devices used in testing environments.</li>
+              <li>Debugged system-level failures involving networking and sensors.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-title">Headstarter — Software Engineer Intern</div>
+            <div class="tl-meta">Long Island City, NY • Aug 2024 – Sep 2024</div>
+            <ul class="tl-list">
+              <li>Built automation tooling and internal workflow improvements using RAG pipelines.</li>
+              <li>Tuned retrieval logic to improve response accuracy and latency.</li>
+              <li>Debugged APIs and backend pipelines in an agile environment.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -137,24 +194,25 @@
       <div class="contact contact-2">
         <div class="contact-card">
           <div class="contact-title">Email</div>
-          <a class="link" href="mailto:nisargpatelnp.112003@gmail.com">
-            nisargpatelnp.112003@gmail.com
-          </a>
+          <div class="contact-value">
+            <a class="link" href="mailto:nisargpatelnp.112003@gmail.com">nisargpatelnp.112003@gmail.com</a>
+          </div>
+          <button class="btn small" id="copyEmailBtn" type="button" data-email="nisargpatelnp.112003@gmail.com">Copy</button>
         </div>
 
         <div class="contact-card">
           <div class="contact-title">Phone</div>
-          <a class="link" href="tel:+12242668703">(224)-266-8703</a>
+          <div class="contact-value">
+            <a class="link" href="tel:+12242668703">(224)-266-8703</a>
+          </div>
         </div>
 
         <div class="contact-card contact-wide">
           <div class="contact-title">Links</div>
           <div class="contact-links">
-            <a class="link" href="https://github.com/NisargPatel07" target="_blank">GitHub</a>
-            <a class="link" href="https://www.linkedin.com/in/nisargpatel07131511/" target="_blank">LinkedIn</a>
-            <a class="link"
-               href="https://drive.google.com/file/d/1n4Jp6K33p_qrFjnvlUPMXTKnHRtMFSNC/view?usp=sharing"
-               target="_blank">Resume</a>
+            <a class="link" href="https://github.com/NisargPatel07" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="link" href="https://www.linkedin.com/in/nisargpatel07131511/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="link" href="https://drive.google.com/file/d/1n4Jp6K33p_qrFjnvlUPMXTKnHRtMFSNC/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
           </div>
         </div>
       </div>
@@ -162,9 +220,8 @@
 
     <footer class="foot">
       <div>© <span id="year"></span> Nisarg Patel</div>
-      <div class="muted">Built for IT Automation, Cybersecurity, and Data roles.</div>
+      <div class="muted">Built for IT Automation, Cybersecurity, and Infrastructure Analytics roles.</div>
     </footer>
-
   </main>
 
   <script src="assets/main.js"></script>
