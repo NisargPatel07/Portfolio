@@ -16,10 +16,8 @@
       <nav class="links">
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
-        <a href="projects.html">Case Studies</a>
         <a href="#contact">Contact</a>
       </nav>
-      <button class="btn ghost" id="themeBtn" type="button">Theme</button>
     </div>
   </header>
 
@@ -30,14 +28,17 @@
         <h1 class="title">
           Building <span class="accent">monitoring</span>, <span class="accent">detection</span>, and <span class="accent">prediction</span> systems for real infrastructure.
         </h1>
+
         <p class="subtitle">
           Computer Science undergraduate focused on IT automation, SOC-style log detection, and infrastructure analytics.
         </p>
 
         <div class="hero-cta">
           <a class="btn" href="#projects">View Projects</a>
-          <a class="btn ghost" href="projects.html">Open Case Studies</a>
-          <a class="btn ghost" id="resumeBtn" href="#">Resume</a>
+          <a class="btn ghost"
+             href="https://drive.google.com/file/d/1n4Jp6K33p_qrFjnvlUPMXTKnHRtMFSNC/view?usp=sharing"
+             target="_blank" rel="noopener noreferrer">Resume</a>
+          <a class="btn ghost" href="#contact">Contact</a>
         </div>
 
         <div class="chips">
@@ -53,15 +54,21 @@
       <div class="hero-right">
         <div class="panel">
           <div class="panel-title">Quick Snapshot</div>
+
           <div class="kvs">
-            <div class="kv"><span>Focus</span><span>IT • Cyber • Data</span></div>
-            <div class="kv"><span>Style</span><span>Production-minded</span></div>
-            <div class="kv"><span>Strengths</span><span>Debugging, Automation</span></div>
+            <div class="kv"><span class="k">Focus</span><span class="v">IT • Cyber • Data</span></div>
+            <div class="kv"><span class="k">Style</span><span class="v">Production-minded</span></div>
+            <div class="kv"><span class="k">Strengths</span><span class="v">Debugging, Automation</span></div>
           </div>
 
           <div class="panel-actions">
-            <a class="btn small" id="githubBtn" href="#">GitHub</a>
-            <a class="btn small ghost" id="linkedinBtn" href="#">LinkedIn</a>
+            <a class="btn small"
+               href="https://github.com/NisargPatel07"
+               target="_blank" rel="noopener noreferrer">GitHub</a>
+
+            <a class="btn small ghost"
+               href="https://www.linkedin.com/in/nisargpatel07131511/"
+               target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>
@@ -75,10 +82,10 @@
       </div>
 
       <div class="filters">
-        <button class="pill active" data-filter="all">All</button>
-        <button class="pill" data-filter="cyber">Cybersecurity</button>
-        <button class="pill" data-filter="data">Data Science</button>
-        <button class="pill" data-filter="it">IT Automation</button>
+        <button class="pill active" data-filter="all" type="button">All</button>
+        <button class="pill" data-filter="cyber" type="button">Cybersecurity</button>
+        <button class="pill" data-filter="data" type="button">Data Science</button>
+        <button class="pill" data-filter="it" type="button">IT Automation</button>
       </div>
 
       <div class="grid" id="projectGrid">
@@ -86,18 +93,33 @@
           <div class="badge">Cybersecurity</div>
           <div class="card-title">SOCLite</div>
           <div class="card-sub">SOC Detection & Response Platform</div>
+          <ul class="card-list">
+            <li>Detects brute force, password spray, impossible travel</li>
+            <li>Generates prioritized alerts with severity scoring</li>
+            <li>Dashboard workflow for triage and closure</li>
+          </ul>
         </article>
 
         <article class="card" data-tags="data">
           <div class="badge">Data Science</div>
           <div class="card-title">Incident Forecaster</div>
           <div class="card-sub">Cloud Incident Prediction Platform</div>
+          <ul class="card-list">
+            <li>Predicts failure risk using system metrics and logs</li>
+            <li>Feature engineering + gradient boosting models</li>
+            <li>Host-level risk scoring and monitoring view</li>
+          </ul>
         </article>
 
         <article class="card" data-tags="it">
           <div class="badge">IT Automation</div>
           <div class="card-title">System Health Monitor</div>
           <div class="card-sub">Monitoring + Ticketing Lab</div>
+          <ul class="card-list">
+            <li>Monitors CPU + disk health with thresholds</li>
+            <li>Auto-creates tickets and stores incident history</li>
+            <li>Operational dashboard for reliability tracking</li>
+          </ul>
         </article>
       </div>
     </section>
@@ -116,9 +138,9 @@
             <div class="tl-title">IT Expert System — Programming Intern</div>
             <div class="tl-meta">Schaumburg, IL • Jul 2023 – Aug 2023</div>
             <ul class="tl-list">
-              <li>Diagnosed and resolved production hardware/software issues.</li>
-              <li>Supported embedded Linux devices in testing environments.</li>
-              <li>Debugged networking and sensor-level failures.</li>
+              <li>Diagnosed and resolved production hardware/software issues to support uptime.</li>
+              <li>Supported embedded Linux devices used in testing environments.</li>
+              <li>Debugged system-level failures involving networking and sensors.</li>
             </ul>
           </div>
         </div>
@@ -129,9 +151,9 @@
             <div class="tl-title">Headstarter — Software Engineer Intern</div>
             <div class="tl-meta">Long Island City, NY • Aug 2024 – Sep 2024</div>
             <ul class="tl-list">
-              <li>Built automation tooling using RAG pipelines.</li>
-              <li>Improved response accuracy and latency.</li>
-              <li>Debugged APIs and backend systems.</li>
+              <li>Built automation tooling and internal workflow improvements using RAG pipelines.</li>
+              <li>Tuned retrieval logic to improve response accuracy and latency.</li>
+              <li>Debugged APIs and backend pipelines in an agile environment.</li>
             </ul>
           </div>
         </div>
@@ -145,24 +167,29 @@
         <p>Make it easy for recruiters to reach you.</p>
       </div>
 
-      <div class="contact">
+      <div class="contact contact-2">
         <div class="contact-card">
           <div class="contact-title">Email</div>
-          <div class="contact-value" id="emailText"></div>
-          <button class="btn small" id="copyEmailBtn" type="button">Copy</button>
+          <div class="contact-value">
+            <a class="link" href="mailto:nisargpatelnp.112003@gmail.com">nisargpatelnp.112003@gmail.com</a>
+          </div>
+          <button class="btn small" id="copyEmailBtn" type="button"
+                  data-email="nisargpatelnp.112003@gmail.com">Copy</button>
         </div>
 
         <div class="contact-card">
           <div class="contact-title">Phone</div>
-          <div class="contact-value" id="phoneText"></div>
+          <div class="contact-value">
+            <a class="link" href="tel:+12242668703">(224)-266-8703</a>
+          </div>
         </div>
 
-        <div class="contact-card">
+        <div class="contact-card contact-wide">
           <div class="contact-title">Links</div>
           <div class="contact-links">
-            <a class="link" id="githubLink" href="#">GitHub</a>
-            <a class="link" id="linkedinLink" href="#">LinkedIn</a>
-            <a class="link" href="projects.html">Case Studies</a>
+            <a class="link" href="https://github.com/NisargPatel07" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="link" href="https://www.linkedin.com/in/nisargpatel07131511/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="link" href="https://drive.google.com/file/d/1n4Jp6K33p_qrFjnvlUPMXTKnHRtMFSNC/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
           </div>
         </div>
       </div>
