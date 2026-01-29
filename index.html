@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nisarg Patel | IT Automation • Cybersecurity • Data</title>
+  <meta name="description" content="Portfolio of Nisarg Patel: IT automation, SOC detection, and infrastructure ML projects." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Nisarg Patel</a>
+      <nav class="links">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="projects.html">Case Studies</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="btn ghost" id="themeBtn" type="button">Theme</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-left">
+        <h1 class="title">
+          Building <span class="accent">monitoring</span>, <span class="accent">detection</span>, and <span class="accent">prediction</span> systems for real infrastructure.
+        </h1>
+        <p class="subtitle">
+          Computer Science undergraduate focused on IT automation, SOC-style log detection, and infrastructure analytics.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="projects.html">Open Case Studies</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+
+        <div class="chips">
+          <span class="chip">Linux</span>
+          <span class="chip">Python</span>
+          <span class="chip">Flask</span>
+          <span class="chip">Automation</span>
+          <span class="chip">Log Analysis</span>
+          <span class="chip">ML Pipelines</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="panel">
+          <div class="panel-title">Quick Snapshot</div>
+          <div class="kvs">
+            <div class="kv"><span>Focus</span><span>IT • Cyber • Data</span></div>
+            <div class="kv"><span>Style</span><span>Production-minded</span></div>
+            <div class="kv"><span>Strengths</span><span>Debugging, Automation</span></div>
+          </div>
+
+          <div class="panel-actions">
+            <a class="btn small" href="#" id="resumeBtn">Resume (add link)</a>
+            <a class="btn small ghost" href="#" id="githubBtn">GitHub (add link)</a>
+            <a class="btn small ghost" href="#" id="linkedinBtn">LinkedIn (add link)</a>
+          </div>
+
+          <div class="note">
+            Update the links in <span class="mono">assets/main.js</span>.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-head">
+        <h2>Featured Projects</h2>
+        <p>Three systems that show real IT, security, and data workflows.</p>
+      </div>
+
+      <div class="filters">
+        <button class="pill active" data-filter="all">All</button>
+        <button class="pill" data-filter="cyber">Cybersecurity</button>
+        <button class="pill" data-filter="data">Data Science</button>
+        <button class="pill" data-filter="it">IT Automation</button>
+      </div>
+
+      <div class="grid" id="projectGrid">
+        <article class="card" data-tags="cyber">
+          <div class="card-top">
+            <div class="badge">Cybersecurity</div>
+            <div class="card-title">SOCLite</div>
+            <div class="card-sub">SOC Detection & Response Platform</div>
+          </div>
+          <ul class="card-list">
+            <li>Detects brute-force, password spray, impossible travel</li>
+            <li>Rule-based severity scoring</li>
+            <li>Flask dashboard for triage</li>
+          </ul>
+          <div class="card-actions">
+            <a class="btn small" href="projects.html#soclite">Case Study</a>
+            <button class="btn small ghost" data-modal="soclite" type="button">Quick View</button>
+          </div>
+        </article>
+
+        <article class="card" data-tags="data">
+          <div class="card-top">
+            <div class="badge">Data Science</div>
+            <div class="card-title">Incident Forecaster</div>
+            <div class="card-sub">Cloud Incident Prediction Platform</div>
+          </div>
+          <ul class="card-list">
+            <li>Predicts incident risk from system metrics</li>
+            <li>Feature engineering + gradient boosting</li>
+            <li>Dashboard risk ranking by host</li>
+          </ul>
+          <div class="card-actions">
+            <a class="btn small" href="projects.html#incident">Case Study</a>
+            <button class="btn small ghost" data-modal="incident" type="button">Quick View</button>
+          </div>
+        </article>
+
+        <article class="card" data-tags="it">
+          <div class="card-top">
+            <div class="badge">IT Automation</div>
+            <div class="card-title">System Health Monitor</div>
+            <div class="card-sub">Monitoring + Ticketing Lab</div>
+          </div>
+          <ul class="card-list">
+            <li>Tracks CPU + disk health</li>
+            <li>Auto-ticket creation + thresholds</li>
+            <li>SQLite incident history</li>
+          </ul>
+          <div class="card-actions">
+            <a class="btn small" href="projects.html#health">Case Study</a>
+            <button class="btn small ghost" data-modal="health" type="button">Quick View</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p>Hands-on work in production-style environments.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-title">IT Expert System — Programming Intern</div>
+            <div class="tl-meta">Schaumburg, IL • Jul 2023 – Aug 2023</div>
+            <ul class="tl-list">
+              <li>Diagnosed and resolved production hardware/software issues to support uptime.</li>
+              <li>Supported embedded Linux devices used in testing environments.</li>
+              <li>Debugged system-level failures involving sensors and networking.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-body">
+            <div class="tl-title">Headstarter — Software Engineer Intern</div>
+            <div class="tl-meta">Long Island City, NY • Aug 2024 – Sep 2024</div>
+            <ul class="tl-list">
+              <li>Built automation tools for support workflows using a RAG pipeline.</li>
+              <li>Improved latency and response accuracy by tuning retrieval logic.</li>
+              <li>Debugged APIs and pipelines in an agile team environment.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>Make it easy for recruiters to reach you.</p>
+      </div>
+
+      <div class="contact">
+        <div class="contact-card">
+          <div class="contact-title">Email</div>
+          <div class="contact-value" id="emailText">your@email.com</div>
+          <button class="btn small" id="copyEmailBtn" type="button">Copy</button>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-title">Links</div>
+          <div class="contact-links">
+            <a class="link" href="#" id="githubLink">GitHub</a>
+            <a class="link" href="#" id="linkedinLink">LinkedIn</a>
+            <a class="link" href="projects.html">Case Studies</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <div>© <span id="year"></span> Nisarg Patel</div>
+      <div class="muted">Built for IT Automation, Cybersecurity, and Infrastructure Analytics roles.</div>
+    </footer>
+  </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <div class="modal-title" id="modalTitle"></div>
+        <button class="btn ghost small" id="modalClose" type="button">Close</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

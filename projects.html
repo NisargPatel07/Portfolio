@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nisarg Patel | Case Studies</title>
+  <meta name="description" content="Project case studies: SOCLite, Incident Forecaster, System Health Monitor." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Nisarg Patel</a>
+      <nav class="links">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button class="btn ghost" id="themeBtn" type="button">Theme</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="section">
+      <div class="section-head">
+        <h1>Case Studies</h1>
+        <p>Clear problem → design → implementation → what’s next.</p>
+      </div>
+    </section>
+
+    <section class="case" id="soclite">
+      <div class="case-head">
+        <div class="case-title">SOCLite</div>
+        <div class="case-sub">SOC Detection & Response Platform</div>
+      </div>
+
+      <div class="case-grid">
+        <div class="case-card">
+          <div class="case-card-title">Problem</div>
+          <p>Security teams need fast detection from login logs. Manual review is slow and error-prone.</p>
+        </div>
+        <div class="case-card">
+          <div class="case-card-title">Solution</div>
+          <p>Ingest auth logs, run detection rules, generate prioritized alerts, and track triage in a dashboard.</p>
+        </div>
+        <div class="case-card">
+          <div class="case-card-title">Key Detections</div>
+          <ul class="clean">
+            <li>Brute force (many failures for one user from one IP)</li>
+            <li>Password spray (one IP failing across many users)</li>
+            <li>Impossible travel (country jump too fast)</li>
+          </ul>
+        </div>
+        <div class="case-card">
+          <div class="case-card-title">Stack</div>
+          <div class="mono">Python • Pandas • Flask</div>
+        </div>
+      </div>
+
+      <div class="case-card wide">
+        <div class="case-card-title">Architecture</div>
+        <pre class="arch">Auth Logs (CSV)
+  -> Rule Engine
+  -> Alert Builder (severity + summary)
+  -> Alerts JSON
+  -> Flask Dashboard (triage + close)</pre>
+      </div>
+    </section>
+
+    <section class="case" id="incident">
+      <div class="case-head">
+        <div class="case-title">Incident Forecaster</div>
+        <div class="case-sub">Cloud Incident Prediction Platform</div>
+      </div>
+
+      <div class="case-grid">
+        <div class="case-card">
+          <div class="case-card-title">Problem</div>
+          <p>Outages cost money. Teams want early warnings before failures happen.</p>
+        </div>
+        <div class="case-card">
+          <div class="case-card-title">Solution</div>
+          <p>Train a model on metrics patterns and score each host with an incident risk value.</p>
+        </div>
+        <div class="case-card">
+          <div class="case-card-title">Signals</div>
+          <ul class="clean">
+            <li>CPU, memory, disk, network</li>
+            <li>Error counts (log-derived)</li>
+            <li>Rolling averages and volatility features</li>
+          </ul>
+        </div>
+        <div class="case-card">
+          <div class="case-card-title">Stack</div>
+          <div class="mono">Python • Pandas • scikit-learn • Flask</div>
+        </div>
+      </div>
+
+      <div class="case-card wide">
+        <div class="case-card-title">Pipeline</div>
+        <pre class="arch">Metrics CSV
+  -> Feature Engineering
+  -> Train Model
+  -> Score Latest Host State
+  -> Risk Dashboard</pre>
+      </div>
+    </section>
+
+    <section class="case" id="health">
+      <div class="case-head">
+        <div class="case-title">System Health Monitor</div>
+        <div class="case-sub">Monitoring + Ticketing Lab</div>
+      </div>
+
+      <div class="case-grid">
+        <div class="case-card">
+          <div class="case-card-title">Problem</div>
+          <p>IT teams need visibility and a lightweight way to track incidents and recurring failures.</p>
+        </div>
+        <div class="case-card">
+          <div class="case-card-title">Solution</div>
+          <p>Monitor system health, auto-create tickets when thresholds are crossed, and keep history for review.</p>
+        </div>
+        <div class="case-card">
+          <div class="case-card-title">Capabilities</div>
+          <ul class="clean">
+            <li>CPU + disk monitoring</li>
+            <li>Auto-ticket creation</li>
+            <li>SQLite persistence</li>
+          </ul>
+        </div>
+        <div class="case-card">
+          <div class="case-card-title">Stack</div>
+          <div class="mono">Python • Flask • SQLite</div>
+        </div>
+      </div>
+
+      <div class="case-card wide">
+        <div class="case-card-title">Architecture</div>
+        <pre class="arch">Background Monitor
+  -> Threshold Check
+  -> Ticket DB (SQLite)
+  -> Dashboard (Flask)</pre>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <div>© <span id="year"></span> Nisarg Patel</div>
+      <div class="muted">Case studies are written to match recruiter expectations.</div>
+    </footer>
+  </main>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
